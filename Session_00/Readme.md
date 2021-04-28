@@ -104,6 +104,8 @@
 	97.   7x7   |   3x3   >   5x5
 	98.   5x5   |   3x3   >   3x3
 	99.   3x3   |   3x3   >   1x1
+
+	99 timmes
  ```
  ---
 5. How are kernels initialized? 
