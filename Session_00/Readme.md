@@ -1,3 +1,8 @@
+Group Members-
+1. Nishad Rajmalwar
+2. Owais
+3. Senthil
+4. Prasad
 
 1. What are Channels and Kernels (according to EVA)?
 
