@@ -7,12 +7,11 @@
 
 > Kernel is 3x3 matrix that extracts useful information throughout the network. As I have mentioned the different features being extracted at different points in the network, the kernels job is to automatically extract these features and assign it to different channels.
 
-
-
-
-
 ---
 2. Why should we (nearly) always use 3x3 kernels?
+
+> 3x3 kernels are useful as they can be conbimed in successive layers to form bigger kernels indirectly like 5x5, 7x7 and so on. For example, if we use a 3x3 kernel 3 times, that will be like using a 9x9 kernel as the first layer gives 3x3, second layer 5x5, third layer 7x7 and final fourth layer 9x9. 3x3 kernels work more efficiently as well. In the aforementioned case, we need 4x3x3 kernels which contains 36 weights and biases whereas if we used 9x9 kernel, we would need 81 weights and biases. Clearly, using 3x3 kernels is efficient.
+> 
 ---
 3. How many times do we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...)
 ```
@@ -119,5 +118,15 @@
 	99 timmes
  ```
  ---
-5. How are kernels initialized? 
-6. What happens during the training of a DNN?
+4. How are kernels initialized?
+
+> Kernels are initialized randomly in a normal distribution manner. This is done so that the distribution of values across all kernels is centered around a known mean and varies by a known standard deviation. Another reason is, randomly initialized kernels are able to useful features on their own without the need for us to specify values. Earlier, engineers would do feature engineering and come up with specific kernels to extract one particular feature from the input. With more computational power in hand now, we can skip feature engineering as it is a time taking process and may not always yield the best results. This is because as humans, we may not know what features and the number of features that are useful for the particular problem.
+
+---
+5. What happens during the training of a DNN?
+
+> During the training of a DNN, we first extract the very fundamental features like edges and gradients. This captures the information regarding change in pixels across different regions of the input image and tries to group the common ones together. Next, we identify the texture and patterns that are formed by combining the previously identified edges and gradients. Similary, we make parts of objects which is a discernible entity of an image. For example, if the problem pertains to image classification of cars, the parts of objects would be the wheel, steering, lights, windows, seats and so on. Finally, the DNN combines the parts of objects together to give the final object itself.
+
+> As the neural network starts training, the randomly initialized weights change their values across different layers to identify different features mentioned above and the network improves its accuracy.
+
+---
