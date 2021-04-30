@@ -1,12 +1,16 @@
 
 1. What are Channels and Kernels (according to EVA)?
-```
-Channels are enitities that store one particular type of information. This information changes depending on the layer of the network. 
 
-Starting at the first layer, the channels store edges and gradients. This can be vertical edges, horizontal edges, inclined edges so on and so forth. The edges and gradients are identified based on the input image context. Similaryly at the later layers, the channels store texture and patterns, parts of objects and finally the object itself. Ideally, the channels store discrete information of the image and can be combined together to create the final object.
+> Channels are enitities that store one particular type of information. This information changes depending on the layer of the network. 
+
+> Starting at the first layer, the channels store edges and gradients. This can be vertical edges, horizontal edges, inclined edges so on and so forth. The edges and gradients are identified based on the input image context. Similaryly at the later layers, the channels store texture and patterns, parts of objects and finally the object itself. Ideally, the channels store discrete information of the image and can be combined together to create the final object.
+
+> Kernel is 3x3 matrix that extracts useful information throughout the network. As I have mentioned the different features being extracted at different points in the network, the kernels job is to automatically extract these features and assign it to different channels.
 
 
-```
+
+
+
 ---
 2. Why should we (nearly) always use 3x3 kernels?
 ---
