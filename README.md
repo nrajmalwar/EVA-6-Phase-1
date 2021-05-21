@@ -3,4 +3,14 @@ Assignment submissions from the EVA-6 Phase 1 program. EVA is an exhaustive and 
 
 ## [Session 0: Background and Basics - Machine Learning intuition](Session_00)
 
-Assignment - Answer questions on the basics of convolutional neural network
+Answer questions on the basics of convolutional neural network
+
+## [Session 3: Pytorch](Session_03)
+
+Write a neural network that takes two inputs
+* an image from MNIST dataset
+* a random number between 0 and 9
+
+and gives the output
+* the "number" that was represented by the MNIST image
+* the "sum" of this number with the random number that was generated and sent as the input to the network
