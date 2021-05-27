@@ -17,4 +17,5 @@ and gives the output
 
 ## [Session 4: Backpropagation and Architectural Basics](Session_04)
 
-* Train a neural network on excel sheet with all the backpropagation calculations involved
+* [Train a neural network on excel sheet with all the backpropagation calculations involved](Backpropagations_Calculations)
+* [Train MNIST Classifier Network with less than 20k parameters and 99.4% validation accuracy] (Session_04/Architectural_Basics)
