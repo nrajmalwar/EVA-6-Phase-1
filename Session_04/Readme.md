@@ -1,4 +1,4 @@
-## 1. [Train a Simple Neural Network using Microsoft Excel] (Backpropagation Calculations)
+## [1. Train a Simple Neural Network using Microsoft Excel](Backpropagation Calculations)
 
 
 
