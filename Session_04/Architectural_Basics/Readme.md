@@ -5,8 +5,33 @@ The objective is to optimize a network combining many deep learning techniques o
 
 * Create dataloader object for the train and test data for the MNIST dataset and apply normalization using mean and std deviation values of (0.1307,), (0.3081,)
 * Batch size = 28
+---
+## Model Architecture and Design
 
-## Model Architecture
+* Each convolution block consists of a Conv2D layer, followed by ReLU activation, BatchNormalization.
+* Dropout layers are placed after BatchNormalization at the appropriate position
+* Dropout is NOT used at- 
+   * before MaxPool,
+   * after layer with less channels
+   * before output layer
+        
+> ### First Block
+> * 3 Convolution layers followed by a transition layer (MaxPool + 1x1 convolution to reduce the number of channels)
+> * Steadily increase the number of channels to 24 and reduce it using 1x1 convolution to 10 channels
+> * Receptive field of 14 is attained
+
+> ### Second Block
+> * 4 Convolution layer with no dropout at the end
+> * Steadily increase the number of channels to 24 and reduce it using 1x1 convolution to 16 channels
+> * Receptive field of 20 is attained
+
+> ### Global Average Pooling (GAP)
+> * GAP is applied to the channel size of 5x5 after second block in the forward pass 
+> * Given by ``` x = x.mean(dim=(2, 3)) ```
+
+> ### Third Block 
+> * 1 Fully Connected layer of 10 neurons for the outputs
+
 ```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
@@ -53,8 +78,12 @@ Params size (MB): 0.07
 Estimated Total Size (MB): 1.16
 ----------------------------------------------------------------
 ```
-
+---
 ## Model Training and Evaluation
+
+* LR - Adam 0.003
+* LR_Scheduler - ```lambda1 = lambda epoch: 0.85 ** epoch```
+* Number of Epochs - 20
 ```
 Epoch number: 1
 loss=2.466463327407837 batch_id=468: 100%|██████████| 469/469 [00:13<00:00, 35.29it/s]
@@ -117,5 +146,6 @@ Epoch number: 20
 loss=2.38149356842041 batch_id=468: 100%|██████████| 469/469 [00:13<00:00, 36.07it/s]
 Test set: Average loss: 2.6136, Accuracy: 9941/10000 (99%)
 ```
-
+---
 ## Observations
+The model reaches the highest test accuracy of ```99.46%``` at the 15th Epoch. The architecture of the model, BatchNormalization, Dropout, Transition Layer and LR_Scheduler help the model achieve high accuracy with ```17,216``` parameters and in less than ```20 epochs```.
