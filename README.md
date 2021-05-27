@@ -14,3 +14,7 @@ Write a neural network that takes two inputs
 and gives the output
 * the "number" that was represented by the MNIST image
 * the "sum" of this number with the random number that was generated and sent as the input to the network
+
+## [Session 4: Backpropagation and Architectural Basics](Session_04)
+
+* Train a neural network on excel sheet with all the backpropagation calculations involved
