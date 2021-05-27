@@ -1,4 +1,4 @@
-# MNIST Classification using stripped down network with less than 20,000 parameters
+# MNIST Classification with less than 20,000 parameters and 99.4% validation accuracy
 The objective is to optimize a network combining many deep learning techniques on the layers and use very few parameters to achieve high accuracy
 
 ## Data Preprocessing
