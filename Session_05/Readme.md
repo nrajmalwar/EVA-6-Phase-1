@@ -25,7 +25,7 @@ The model is trained in 4 steps (Please click on individual steps to read more)-
     Best Test Acc - 99.53% (Increase)
  
 ## [5. Additional Model < 8K Parameters](Model_05_Additional_Model)
-    Parameters - 7,614 parameters (Decrease)
+    Parameters - 7,614 (Decrease)
     Best Train Accuracy - 99.05% (No change)
     Best Test Accuracy - 99.46 (Slight Decrease)
 
