@@ -22,7 +22,7 @@ and gives the output
 
 ## [Session 5: Coding Drill Down](Session_05)
 * Train a neural network using the **Target, Results and Analysis** strategy to achieve 99.40% test accuracy on MNIST dataset in less than 10,000 parameters and 15 epochs. The model is trained in 4 steps
-1. [Skeleton Model](Session_05/Model_01)
-2. [Regularization and BatchNormalization](Session_05/Model_02)
-3. [Image Augmenations](Session_05/Model_03)
-4. [LR Scheduler](Session_05/Model_04)
+[1. Skeleton Model](Session_05/Model_01)
+[2. Regularization and BatchNormalization](Session_05/Model_02)
+[3. Image Augmenations](Session_05/Model_03)
+[4. LR Scheduler](Session_05/Model_04)
