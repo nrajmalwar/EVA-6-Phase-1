@@ -10,18 +10,18 @@ The model is trained in 4 steps (Please click on individual step to read more)-
     Best Test Acc - 98.76%
 
 ## [2. Regularization and BatchNormalization](Model_02)
-    Parameters - 9,436 (slight increase due to BatchNormalization)
+    Parameters - 9,436 (Slight increase due to BatchNormalization)
     Best Train Acc - 99.20% (Increase)
     Best Test Acc - 99.42% (Increase)
 
 ## [3. Image Augmentations](Model_03)
     Parameters - 9,436 (No change)
-    Best Train Acc - 98.97% (slight decrease due to augmentation)
+    Best Train Acc - 98.97% (Slight decrease due to augmentation)
     Best Test Acc - 99.41% (No change)
 
 ## [4. LR Scheduler](Model_04)
     Parameters - 9,436 (No change)
-    Best Train Acc - 99.05% (No change)
+    Best Train Acc - 99.05% (Slight increase)
     Best Test Acc - 99.53% (Increase)
 
 # Results of the Final Model
