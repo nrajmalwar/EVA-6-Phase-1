@@ -207,4 +207,4 @@ Test set: Average loss: 0.0165, Accuracy: 9949/10000 (99.49%)
 <img src="./static/Training_Graphs.png" width=800>
 
 ## Sample of Misclassified Images
-<img src=".static/Misclassified_Images.png" width=1000>
+<img src="./static/Misclassified_Images.png" width=1000>
