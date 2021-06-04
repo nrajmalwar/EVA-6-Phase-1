@@ -19,10 +19,15 @@ The model is trained in 4 steps (Please click on individual steps to read more)-
     Best Train Acc - 98.97% (Slight decrease due to augmentation)
     Best Test Acc - 99.41% (No change)
 
-## [4. LR Scheduler](Model_04)
+## [4. LR Scheduler - Final Model](Model_04)
     Parameters - 9,436 (No change)
     Best Train Acc - 99.05% (Slight increase)
     Best Test Acc - 99.53% (Increase)
+ 
+## [5. Additional Model < 8K Parameters](Model_05_Additional_Model)
+    Parameters - 7,614 parameters (Decrease)
+    Best Train Accuracy - 99.05% (No change)
+    Best Test Accuracy - 99.46 (Slight Decrease)
 
 # Results of the Final Model
 
