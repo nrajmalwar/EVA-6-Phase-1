@@ -30,3 +30,5 @@ and gives the output
      [3. Image Augmentations](Session_05/Model_03)
 
      [4. LR Scheduler](Session_05/Model_04)
+     
+     [5. Additional Model < 8K Parameters](Model_05_Additional_Model)
