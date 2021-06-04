@@ -1,4 +1,4 @@
-## 5. Additional Model - Reduce Number of Parameters
+## 5. Additional Model - Reduce Number of Parameters to < 8K
 
 ### Target:
 Reduce the number of parameters to < 8K and maintain accuracy-
