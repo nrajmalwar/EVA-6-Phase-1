@@ -19,7 +19,7 @@ The model is trained in 4 steps-
     Best Train Acc - 98.97% (slight decrease due to augmentation)
     Best Test Acc - 99.41% (No change)
 
-## [4. LR Scheduler](MOdel_04)
+## [4. LR Scheduler](Model_04)
     Parameters - 9,436 (No change)
     Best Train Acc - 99.05% (No change)
     Best Test Acc - 99.53% (Increase)
