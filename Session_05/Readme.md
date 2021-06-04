@@ -203,3 +203,8 @@ EPOCH: 14
 Loss=0.0334785170853138 Batch_id=234 Accuracy=99.10: 100%|██████████| 235/235 [00:20<00:00, 11.69it/s]
 Test set: Average loss: 0.0165, Accuracy: 9949/10000 (99.49%)
 ```
+## Training Graphs
+<img src="./static/Training_Graphs.png" width=800>
+
+## Sample of Misclassified Images
+<img src=".static/Misclassified_Images.png" width=1000>
