@@ -2,7 +2,7 @@
 
 The objective is to train the model in 4 steps building a foundation and subsequently improving on it with each step. We want to achieve higher than 99.40% accuracy is less than 10,000 parameters and within 15 epochs.
 
-The model is trained in 4 steps (Please click on individual step to read more)-
+The model is trained in 4 steps (Please click on individual steps to read more)-
 
 ## [1. Skeleton Model](Model_01)
     Parameters - 9,264
