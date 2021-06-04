@@ -8,7 +8,7 @@ Reduce the number of parameters to < 8K and maintain accuracy-
 
 ### Results:
 ```
-Parameters: 7,614 parameters
+Parameters: 7,614
 Best Train Accuracy: 99.05%
 Best Test Accuracy: 99.46%
 ```
