@@ -27,6 +27,6 @@ and gives the output
 
 [2. Regularization and BatchNormalization](Session_05/Model_02.ipynb)
 
-[3. Image Augmenations](Session_05/Model_03.ipynb)
+[3. Image Augmentations](Session_05/Model_03.ipynb)
 
 [4. LR Scheduler](Session_05/Model_04.ipynb)
