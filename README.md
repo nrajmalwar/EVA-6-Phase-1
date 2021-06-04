@@ -21,7 +21,7 @@ and gives the output
 * [Train MNIST Classifier Network with less than 20k parameters and 99.4% validation accuracy](Session_04/Architectural_Basics)
 
 ## [Session 5: Coding Drill Down](Session_05)
-* Train a neural network using the **Target, Results and Analysis** strategy to achieve 99.40% test accuracy on MNIST dataset in less than 10,000 parameters and 15 epochs. The model is trained in 4 steps-
+* Train a neural network using the **Target, Results and Analysis** strategy to achieve 99.50% test accuracy on MNIST dataset in less than 10,000 parameters and 15 epochs. The model is trained in 4 steps-
 
      [1. Skeleton Model](Session_05/Model_01)
 
