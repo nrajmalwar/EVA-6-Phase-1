@@ -70,7 +70,9 @@ Defined  a batch normalization function that takes in batch normalization type (
       return nn.BatchNorm2d(channels)
 ```
 
-Modified the class to take 1 parameter batch normalization type(bn_type)
+## model.py
+
+Create a python file which contains the modified class to take 1 parameter batch normalization type (bn_type). We also also add the batch_norm() function inside the class init() function
 
 ```python
   class Net(nn.Module):
