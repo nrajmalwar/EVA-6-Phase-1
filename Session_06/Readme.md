@@ -99,18 +99,21 @@ Modified the class to take 1 parameter batch normalization type(bn_type)
               batch_norm(self.bn_type,20),
               nn.Dropout(self.dropout)
           ) # output_size = 10
+          
           self.convblock5 = nn.Sequential(
               nn.Conv2d(in_channels=20, out_channels=12, kernel_size=(3, 3), padding=0, bias=False),
               nn.ReLU(),            
               batch_norm(self.bn_type,12),
               #nn.Dropout(self.dropout)
           ) # output_size = 8
+          
           self.convblock6 = nn.Sequential(
               nn.Conv2d(in_channels=12, out_channels=12, kernel_size=(3, 3), padding=0, bias=False),
               nn.ReLU(),            
               batch_norm(self.bn_type,12),
               nn.Dropout(self.dropout)
           ) # output_size = 6
+          
           self.convblock7 = nn.Sequential(
               nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(3, 3), padding=1, bias=False),
               nn.ReLU(),            
@@ -129,9 +132,6 @@ Modified the class to take 1 parameter batch normalization type(bn_type)
               # nn.ReLU(),
               # nn.Dropout(self.dropout)
           ) 
-
-
-          self.dropout = nn.Dropout(dropout_value)
 
       def forward(self, x):
           x = self.convblock1(x)
