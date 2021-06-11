@@ -6,15 +6,19 @@ The goal here is to understand various batch normalization techniques on a neura
 - Network with Group Normalization
 
 ## File Structure
-.
+```
 +-- Batch_Normalization_and_Regularization.ipynb
+|
 +-- models
 |   +-- model.py
+|
 +-- utils
 |   +-- train.py
 |   +-- test.py
+|
 +-- plots
 |   +-- plot.py
+```
 
 ## Network Used
 Below is the network we have used as a baseline.
