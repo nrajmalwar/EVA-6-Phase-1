@@ -180,16 +180,16 @@ Incorporated the below as a configurable loss with flag l1_reg
 
 ## Analysis:
 
-- Using L1 with batch normalization reduced the achieved accuracy compared to batch normalization alone (~ 1.5 % reduction).Maybe because L1 is forcing to use spare parameters.The model was underfitting too. Training accuracy was only ~97.49
+- Using L1 with batch normalization reduced the achieved accuracy compared to batch normalization alone (~ 1.5 % reduction). Maybe because L1 is forcing to use spare parameters. The model was underfitting too. Training accuracy was only ~97.49.
 - Learning was more uneven in while using batch normalization + L1
 - Layer and group normalization gve similar results compareed to Batch normalization + L1
 - Batch normalization + L1
-  - training accuracy : 97.41
-  - test accuracy : 98.33
+  - training accuracy : 97.83
+  - test accuracy : 98.63
 - Layer normalization
-  - training accuracy : 99.09
-  - test accuracy : 99.41
+  - training accuracy : 99.16
+  - test accuracy : 99.45
 - Group normalization
-  - training accuracy : 98.93
-  - test accuracy : 99.32
+  - training accuracy : 99.16
+  - test accuracy : 99.48
 
