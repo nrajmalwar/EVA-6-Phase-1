@@ -32,3 +32,9 @@ and gives the output
      [4. LR Scheduler](Session_05/Model_04)
      
      [5. Additional Model < 8K Parameters](Model_05_Additional_Model)
+     
+## [Session 6: Batch Normalization and Regularization ](Session_06)
+* 3 neural networks are trained using the following normalization techniques
+     1. Batch Normalization + L1 Regularization
+     2. Layer Normalization
+     3. Group Nomalization
