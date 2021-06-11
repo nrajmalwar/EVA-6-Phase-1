@@ -1,3 +1,5 @@
+Group Members: Nishad, Senthil, Owais
+
 # Batch Normalization and Regularization
 The goal here is to understand various batch normalization techniques on a neural network using the mnist dataset.
 
