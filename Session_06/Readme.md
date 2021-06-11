@@ -1,15 +1,11 @@
-# Batch Normalization
-
+# Batch Normalization and Regularization
 The goal here is to understand various batch normalization techniques on a neural network using the mnist dataset.
 
 - Network with L1 + BN
 - Network with Layer Normalization
 - Network with Group Normalization
 
-
-
 ## Network Used
-
 Below is the network we have used as a baseline.
 
 ```
@@ -43,7 +39,6 @@ Below is the network we have used as a baseline.
 ```
 
 ## Batch Normalization Used
-
 Defined  a batch normalization function that takes in batch normalization type (bn_type) and channels.
 
 - Group Normalization - splitting into 2 groups
@@ -150,9 +145,7 @@ Modified the class to take 1 parameter batch normalization type(bn_type)
 ```
 
 ## Incorporating L1 regularization
-
 Incorporated the below as a configurable loss with flag l1_reg
-
   ```python
     # Calculate loss
         if l1_reg:
@@ -167,19 +160,15 @@ Incorporated the below as a configurable loss with flag l1_reg
   ```
 
 ## Misclassified Images 
-
 <img src="./static/misclassified_images.png" width=1000>
 
 ## Results:
-
 <img src="./static/training_graphs.png" width=800>
 
 ## Normalization Calculations for 4 channel images
-
 <img src="./static/calculations.png" width=800>
 
 ## Analysis:
-
 - Using L1 with batch normalization reduced the achieved accuracy compared to batch normalization alone (~ 1.5 % reduction). Maybe because L1 is forcing to use spare parameters. The model was underfitting too. Training accuracy was only ~97.49.
 - Learning was more uneven in while using batch normalization + L1
 - Layer and group normalization gve similar results compareed to Batch normalization + L1
@@ -192,4 +181,3 @@ Incorporated the below as a configurable loss with flag l1_reg
 - Group normalization
   - training accuracy : 99.16
   - test accuracy : 99.48
-
