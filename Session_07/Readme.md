@@ -8,8 +8,26 @@ The goal here is to achieve 85% accuracy on the cifar 10 dataset using
   - ShiftScaleRotate
   - CoarseDropout
 
+## Mean and Standard Deviation of the dataset
+```python
+# load the training data
+train_data = datasets.CIFAR10('./cifar10_data', train=True, download=True)
+
+# use np.concatenate to stick all the images together to form a 1600000 X 32 X 3 array
+x = np.concatenate([np.asarray(train_data[i][0]) for i in range(len(train_data))])
+
+# calculate the mean and std along the (0, 1) axes and divide by maximum pixel value of 255
+mean = np.mean(x, axis=(0, 1))/255
+std = np.std(x, axis=(0, 1))/255
+```
+```
+Shape of training data =  (1600000, 32, 3)
+Mean =  [0.49139968 0.48215841 0.44653091]
+Std Deviation =  [0.24703223 0.24348513 0.26158784]
+```
+
 ## Training Dataset Images
-<img src="./static/training_images.png" width=800>
+<img src="./static/training_images.png" width=600>
 
 ## Network Used
 Below is the network we have used as a baseline.
