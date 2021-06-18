@@ -39,7 +39,7 @@ and gives the output
      2. Layer Normalization
      3. Group Nomalization
 
-## [Session 7: Session 7 - Advanced Concepts](Session_07)
+## [Session 7: Advanced Concepts](Session_07)
 * Train a neural network on the CIFAR10 dataset with the following features-
      1. Use albumentations library and apply:
          - Horizontal Flip
