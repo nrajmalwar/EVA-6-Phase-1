@@ -1,3 +1,5 @@
+Group Members: Nishad, Senthil, Prasad
+
 # CIFAR10 Classification
 The goal here is to achieve 85% accuracy on the cifar 10 dataset using
 - Depthwise Separable Convolution
