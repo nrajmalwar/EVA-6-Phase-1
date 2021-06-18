@@ -38,3 +38,14 @@ and gives the output
      1. Batch Normalization + L1 Regularization
      2. Layer Normalization
      3. Group Nomalization
+
+## [Session 7: Session 7 - Advanced Concepts](Session_07)
+* Train a neural network on the CIFAR10 dataset with the following features-
+     1. Use albumentations library and apply:
+         - Horizontal Flip
+         - ShiftScaleRotate
+         - CoarseDropout
+     2. Achieve 85% test accuracy
+     3. Less than 200k parameters
+     4. one of the layers must use Depthwise Separable Convolution
+     5. one of the layers must use Dilated Convolution
