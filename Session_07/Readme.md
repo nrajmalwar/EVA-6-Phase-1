@@ -136,8 +136,7 @@ test_transform = A.Compose(
           #skip connections
           self.skip1 = nn.Sequential(
               nn.Conv2d(in_channels=3, out_channels=32, kernel_size=(1, 1), bias=False),
-
-          ) # output
+          ) 
 
           # CONVOLUTION BLOCK 1
           self.convblock2 = nn.Sequential(
@@ -162,8 +161,6 @@ test_transform = A.Compose(
               nn.ReLU(),      
               nn.Dropout(0.1)
           ) # output_size = 12
-
-          #self.pool1 = nn.MaxPool2d(2, 2) # output_size = 11
 
           # CONVOLUTION BLOCK 2
           self.convblock4 = nn.Sequential(
