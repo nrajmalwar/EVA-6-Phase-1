@@ -8,6 +8,8 @@ The goal here is to achieve 85% accuracy on the cifar 10 dataset using
   - ShiftScaleRotate
   - CoarseDropout
 
+## Training Dataset Images
+<img src="./static/training_images.png" width=800>
 
 ## Network Used
 Below is the network we have used as a baseline.
