@@ -15,7 +15,7 @@ https://github.com/senthilva/deeplearning_template
 
 https://github.com/senthilva/deeplearning_template/blob/main/models/custom_resnet.py
 
-```
+```python
     import torch
     import torch.nn as nn
     import torch.nn.functional as F
@@ -91,10 +91,8 @@ https://github.com/senthilva/deeplearning_template/blob/main/models/custom_resne
 
 ## Image Augmentation used
 
-
-
-    ```
-     def transform_trainv2():
+```python
+def transform_trainv2():
     return A.Compose(
     [
         A.CropAndPad(4,pad_mode=0, pad_cval=0, pad_cval_mask=0, 
@@ -115,26 +113,26 @@ https://github.com/senthilva/deeplearning_template/blob/main/models/custom_resne
                         (0.2023, 0.1994, 0.2010)),
             ToTensorV2(),
         ])
-    ```
+```
 
 
 ## 1 Cycle LR used
 
-    ```
+```
 
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr,
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.SGD(net.parameters(), lr=args.lr,
                           momentum=0.9,weight_decay=5e-4)
-    scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.4,
-                                                    pct_start = 0.18,
-                                                    steps_per_epoch=len(trainloader),
-                                                    epochs=26)
-    ```
+scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.4,
+                                                pct_start = 0.18,
+                                                steps_per_epoch=len(trainloader),
+                                                epochs=26)
+```
 
 
 ## Results:
 
-   ```
+```
    
     Epoch: 1
     /usr/local/lib/python3.7/dist-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
@@ -278,13 +276,13 @@ https://github.com/senthilva/deeplearning_template/blob/main/models/custom_resne
      Learning Rate : [0.006576206523486491]
 
 
-   ```
+```
 
 ## Analysis:
 
 - After building the network , it took a couple of iterations to find the max LR and min LR
-    - Tried with max LR of 1 and 2. Max test accuracy was at 24 epoch of ~85% at 24 epochs
-    - Reduced max LR to 0.4 Max test accuracy was 88.59% at 24 spochs
+- Tried with max LR of 1 and 2. Max test accuracy was at 24 epoch of ~85% at 24 epochs
+- Reduced max LR to 0.4 Max test accuracy was 88.59% at 24 spochs
 
 
 
