@@ -49,3 +49,7 @@ and gives the output
      3. Less than 200k parameters
      4. one of the layers must use Depthwise Separable Convolution
      5. one of the layers must use Dilated Convolution
+
+## [Session 9: ResNets and Higher Receptive Fields](Session_09)
+* Build a custom ResNet architecture for CIFAR10 to reach 90% test accuracy in 24 epochs using OneCycleLR policy
+
